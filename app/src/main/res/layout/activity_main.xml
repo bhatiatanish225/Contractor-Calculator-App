@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextLabor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Labor Cost"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Material Cost"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextLabor"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/editTextMaterial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubTotal:"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSubTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewSubTotal"
+        android:layout_alignBaseline="@id/textViewSubTotal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax:"
+        android:layout_below="@id/textViewSubTotal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTaxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewTax"
+        android:layout_alignBaseline="@id/textViewTax"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:layout_below="@id/textViewTax"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textViewTotal"
+        android:layout_alignBaseline="@id/textViewTotal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp" />
+</RelativeLayout>
